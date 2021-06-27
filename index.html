@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Share</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css"
+      integrity="sha512-JApjWRnfonFeGBY7t4yq8SWr1A6xVYEJgO/UMIYONxaR3C9GETKUg0LharbJncEzJF5Nmiv+Pr5QNulr81LjGQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="share_btn">
+      Share
+      <i class="ion-android-share-alt"></i>
+    </button>
+
+    <div class="modal_wraper" data-action="modal_close">
+      <div class="modal_container">
+        <div class="header">
+          Share Now
+          <button class="close" data-action="modal_close">
+            <i class="ion-android-close"></i>
+          </button>
+        </div>
+        <div class="body">
+          <div class="social_media">
+            <a href="#" class="facebook">
+              <i class="ion-social-facebook"></i>
+            </a>
+
+            <a href="#" class="twitter">
+              <i class="ion-social-twitter"></i>
+            </a>
+
+            <a href="#" class="linkedin">
+              <i class="ion-social-linkedin"></i>
+            </a>
+
+            <a href="#" class="pinterest">
+              <i class="ion-social-pinterest"></i>
+            </a>
+
+            <a href="#" class="instagram">
+              <i class="ion-social-instagram"></i>
+            </a>
+          </div>
+
+          <div class="copy_wraper">
+            <strong>Share by copy</strong>
+            <div class="copy_url_wraper">
+              <input
+                type="url"
+                id="shareable_url"
+                value="https://www.youtube.com/channel/UCiEVvaV8O6VBKzU3d7ezKGg"
+              />
+              <button class="copy_url_btn">
+                Copy <i class="ion-ios-copy-outline"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
